@@ -1,0 +1,11 @@
+n=input().split(" ")
+l1=[]
+l2=[]
+for i in range(len(n)):
+  for j in range(i+2,len(n)-1):
+    s=int(n[j]+n[i])
+    l1.append([i,j])
+    l2.append(s)
+m=max(l2)
+c=l2.index(m)
+print(l2[c])
